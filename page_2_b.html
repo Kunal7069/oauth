@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* styles.css */
+
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.invoice-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.billing-info, .additional-info {
+  width: 45%;
+}
+
+.billing-info h2, .additional-info h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.billing-info p, .additional-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.dates {
+  margin-top: 20px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date span {
+  color: #666;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.date input[type="date"] {
+  padding: 5px;
+  font-size: 14px;
+  color: #000;
+}
+
+.table-container {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  border-bottom: 2px solid #eee;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.tax-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tax-note {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.tax-note p {
+  font-style: italic;
+  color: #666;
+}
+
+    </style>
+    <div class="invoice">
+        <table>
+            <thead>
+                <tr>
+                    <th>DESCRIPTION</th>
+                    <th>RATE/ITEM</th>
+                    <th>QTY</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>testing</td>
+                    <td>₹ 1.00</td>
+                    <td>1</td>
+                    <td>₹ 1.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>CGST @ 0%</td>
+                    <td></td>
+                    <td>₹ 0.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>UTGST @ 0%</td>
+                    <td></td>
+                    <td>₹ 0.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="note">Tax Inclusive, Rounded-off</td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sub Total</td>
+                    <td></td>
+                    <td>₹ 1.00</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td >Total Tax</td>
+                    <td></td>
+                    <td>₹ 0.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
